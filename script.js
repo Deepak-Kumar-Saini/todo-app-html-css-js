@@ -13,6 +13,17 @@ function createNote(note) {
         let noteElement = document.createElement('div')
         noteElement.classList.add('padNote')
         noteElement.innerHTML = note
+
+        let delBtn=document.createElement('div')
+        delBtn.classList.add('deleteNote')
+        delBtn.innerHTML='X'
+        noteElement.appendChild(delBtn)
+
+        delBtn.addEventListener('click',(e)=>{
+            console.log('hello')
+        })
         pad.appendChild(noteElement)
+
+
     }
 }
