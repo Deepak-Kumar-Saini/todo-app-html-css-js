@@ -18,11 +18,12 @@ function createNote(note) {
         delBtn.classList.add('deleteNote')
         delBtn.innerHTML='X'
         noteElement.appendChild(delBtn)
+        pad.appendChild(noteElement)
 
         delBtn.addEventListener('click',(e)=>{
-            console.log('hello')
+            console.log('hello',e.target.parentElement)
+            e.target.parentElement.remove()
         })
-        pad.appendChild(noteElement)
 
 
     }

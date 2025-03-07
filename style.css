@@ -75,4 +75,8 @@ button:active{
     border-radius: 0px 10px 30px 10px;
     overflow: hidden;
     font-family: sans-serif;
+    user-select: none;
+}
+.deleteNote:active{
+    background-color: #9f9f9f;
 }
